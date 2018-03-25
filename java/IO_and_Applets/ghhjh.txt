@@ -1,0 +1,11 @@
+int[] a = new int[opr.length()];
+        char operator = opr.charAt(1);
+
+        a[0] =  opr.charAt(0);
+        a[1] =  opr.charAt(2);
+
+        if (operator=='+'){
+            return  a[0] + a[1] - 96;
+        }else {
+            return  a[0] - a[1];
+        }
