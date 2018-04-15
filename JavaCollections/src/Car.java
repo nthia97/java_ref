@@ -17,10 +17,15 @@ public class Car {
     public boolean equals(Object obj) {
         if (obj != null && obj instanceof Car) {
             String regNumber = ((Car) obj).getRegistrationNumber();
-            if (regNumber != null && regNumber.equals(this.registrationNumber)) {
+            if (regNumber != null && regNumber.equals(this.registrationNumber))
                 return true;
-            }
         }
+        return false;
+    }
+
+    @Override
+    public int hashCode(){
+        return this.registrationNumber.hashCode();
     }
 
     @Override

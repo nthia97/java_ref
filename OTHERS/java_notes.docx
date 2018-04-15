@@ -1,0 +1,11 @@
+class - logical construct
+object - has a physical reality(That is, an object occupies space in memory)
+
+Box b1 = new Box();
+Box b2 = b1;
+REMEMBER When you assign one object reference variable to another object reference variable,
+you are not creating a copy of the object, you are only making a copy of the reference
+
+
+Stack -First in last out 
+Stacks are controlled through two operations traditionally called push and pop
