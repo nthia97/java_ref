@@ -71,7 +71,7 @@ public class LibraryCatalogue {
         int daysLate=currrentDay-(book.getDayCheckedOut()+getLengthOfCheckedoutPeriod());
         if(daysLate>0){
             System.out.println("You owe the library $"+getInitialLateFee()+daysLate*getFeePerLateDay()+
-            " because your book is "+daysLate+"days overdue");
+            " because your book is "+daysLate+" days overdue");
         }else {
             System.out.println("Book returned thank you");
         }
@@ -80,6 +80,21 @@ public class LibraryCatalogue {
     public void sorryBookAlreadyCheckedOut(Book book){
         System.out.println("Sorry, "+book.getTitle()+" is already checked out. "+
         "It should be back on day "+(book.getDayCheckedOut()+getLengthOfCheckedoutPeriod()+"."));
+    }
+
+    public static void main(String[] args) {
+        //TODO code application logic
+        Map<String,Book> bookCollection=new HashMap<String, Book>();
+        Book harry=new Book("Harry Potter",827132,9999999);
+        bookCollection.put("Harry Potter",harry);
+        LibraryCatalogue lib=new LibraryCatalogue(bookCollection);
+        lib.checkOutBook("Harry Potter");
+        lib.nextDay();
+        lib.nextDay();
+        lib.checkOutBook("Harry Potter");
+        lib.setDay(17);
+        lib.returnBook("Harry Potter");
+        lib.checkOutBook("Harry Potter");
     }
 
 }
