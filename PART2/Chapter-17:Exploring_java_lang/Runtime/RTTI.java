@@ -1,0 +1,25 @@
+//Demonstrate Run-time type information
+class X{
+  int a;
+  float b;
+}
+class Y extends X{
+  double c;
+}
+
+class RTTI{
+  public static void main(String[] args) {
+    X x=new X();
+    Y y=new Y();
+    Class<?> clObj;
+
+    clObj=x.getClass(); //get class reference
+    System.out.println("x is object of type: "+clObj.getName());
+
+    clObj=y.getClass(); //get class reference
+    System.out.println("y is object of type: "+clObj.getName());
+
+    clObj=clObj.getSuperclass();
+    System.out.println("y's superclass is "+clObj.getName());
+  }
+}
