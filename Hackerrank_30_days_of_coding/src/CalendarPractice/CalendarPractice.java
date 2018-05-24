@@ -13,7 +13,7 @@ public class CalendarPractice {
 
         System.out.println("this->"+Calendar.DATE);
         System.out.println(calendar.getTime());
-        SimpleDateFormat format1=new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat format1=new SimpleDateFormat("yy-MM-dd");
         String formatted=format1.format(calendar.getTime());
         System.out.println(formatted);
 
