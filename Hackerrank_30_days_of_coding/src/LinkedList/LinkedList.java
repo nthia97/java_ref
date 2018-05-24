@@ -31,9 +31,34 @@ public class LinkedList {
     }
 
     //get
-//    public int get(int index)
-//    {
-//        if(index<=0)
-//            return -1;
-//    }
+    public int get(int index)
+    {
+        if(index<=0)
+            return -1;
+        for(int i=1;i<index;i++){
+            current=current.getNext();
+        }
+        return current.getData();
+    }
+    Node current=head;
+
+    //size
+    public int size(){
+        return count;
+    }
+
+    //isEmpty
+    public boolean isEmpty(){
+        return head==null;
+    }
+    //remove
+    public void remove(){
+        //remove from the back of the list
+        Node current=head;
+        while (current.getNext().getNext()!=null){
+            current=current.getNext();
+        }
+        current.setNext(null);
+        count--;
+    }
 }

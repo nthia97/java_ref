@@ -19,6 +19,7 @@ public class Node {
     //Getters and setters
     public int getData()
     {
+
         return data;
     }
 
@@ -29,6 +30,7 @@ public class Node {
 
     public void setData(int newData)
     {
+
         data=newData;
     }
 
