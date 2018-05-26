@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class Queuey {
     LinkedList queue;
@@ -32,7 +33,27 @@ public class Queuey {
     }
 
     public static void main(String[] args) {
-        Queuey numberQueue=new Queuey();
-        numberQueue.enqueue(5);
+        Stack<String> stacky=new Stack();
+        stacky.push("there");
+        stacky.push("hi");
+
+        System.out.println(stacky.pop()+" ");
+        System.out.println("Peek "+stacky.peek());
+        System.out.println(stacky.pop()+" ");
+        System.out.println("Size "+stacky.size());
+
+
+
+
+
+//        Queuey numberQueue=new Queuey();
+//        numberQueue.enqueue(5);
+//        numberQueue.enqueue(7);
+//        numberQueue.enqueue(6);
+//
+//        System.out.println("First out : "+numberQueue.dequeue());
+//        System.out.println("Peeked at the second element :"+numberQueue.peek());
+//        System.out.println("Second out : "+numberQueue.dequeue());
+//        System.out.println("Third out : "+numberQueue.dequeue());
     }
 }
