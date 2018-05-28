@@ -23,7 +23,11 @@ public class StarWarsInterfacePractice {
         ObiWanKenobi.heal();
 
 
-        System.out.println("Enemy weapon: "+darthVader.weapon);
-        System.out.println("Hero weapon: "+ObiWanKenobi.weapon);
+        System.out.println("\nEnemy weapon: "+darthVader.weapon);
+        System.out.println("\nHero weapon: "+ObiWanKenobi.weapon);
+
+        Character spy=summonCharacter();
+        spy.attack();
+        spy.heal();
     }
 }

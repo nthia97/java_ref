@@ -1,7 +1,7 @@
 package StarWarsInterfacePractice;
 
 public class Hero implements Character {
-    public String weapon="lightsaber";
+    public String weapon="The force";
 
     @Override
     public void attack() {
