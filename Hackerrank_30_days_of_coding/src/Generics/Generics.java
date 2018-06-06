@@ -22,6 +22,7 @@ public class Generics {
         Integer arr[]={1,2,3,4,5,6};
         displayArray(arr);
 
+        
         System.out.println(findMax(2,3));
         System.out.println(findMax(3,3));
         System.out.println(findMax(3,2));
