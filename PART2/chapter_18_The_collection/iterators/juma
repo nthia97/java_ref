@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class Juma {
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+
+		int tt=in.nextInt();
+		
+		
+	}
+}
